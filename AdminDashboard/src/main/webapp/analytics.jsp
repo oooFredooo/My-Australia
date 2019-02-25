@@ -32,7 +32,7 @@
     <link href="./build/css/custom.min.css" rel="stylesheet">
     <link href="./static/css/jquery-ui.min.css" rel="stylesheet" media="screen"/>    
     <link href="./static/css/mainStyle.css" rel="stylesheet" media="screen"/>
-    <link href="./custom.css" rel="stylesheet"/> 
+    <link href="./css/custom.css" rel="stylesheet"/> 
     
     <script type="text/javascript" language="javascript" src="./js/echarts.js"></script>
     <script src="./static/js/jquery-ui.min.js"></script>
