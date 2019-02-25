@@ -4,13 +4,13 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
 public class MapMarker {
-	private int title;
+	private String title;
 	private double lat;
 	private double lng;
-	public int getTitle() {
+	public String getTitle() {
 		return title;
 	}
-	public void setTitle(int title) {
+	public void setTitle(String title) {
 		this.title = title;
 	}
 	public double getLat() {

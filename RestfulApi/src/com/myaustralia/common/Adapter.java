@@ -35,7 +35,7 @@ public class Adapter {
 			modelReport.setReportStatus(Dictionary.getValueFromKey("reportStatusDic", entityReport.getReportStatusId()));
 			
 			modelReports.add(modelReport);
-        } 
+		} 
 		return modelReports;
 	}
 	

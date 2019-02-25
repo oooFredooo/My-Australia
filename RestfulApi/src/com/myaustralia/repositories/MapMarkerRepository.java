@@ -14,9 +14,9 @@ public class MapMarkerRepository {
 		MapMarker mapMarker = new MapMarker();
 		List<MapMarker> mapMarkers = new ArrayList<>();
 		if (authority.equals("Admin")) {
-			mapMarkers = new DAO().query(mapMarker.getClass(), "select ReportId title, Latitude lat, Longitude lng from report");
+			mapMarkers = new DAO().query(mapMarker.getClass(), "select RelevantDepartment title, Latitude lat, Longitude lng from report");
 		} else {
-			mapMarkers = new DAO().query(mapMarker.getClass(), "select ReportId title, Latitude lat, Longitude lng from report where RelevantDepartment = ?", authority);
+			mapMarkers = new DAO().query(mapMarker.getClass(), "select RelevantDepartment title, Latitude lat, Longitude lng from report where RelevantDepartment = ?", authority);
 		}
 		return JsonHelper.parseToJsonWithoutRoot(mapMarkers);
 	}

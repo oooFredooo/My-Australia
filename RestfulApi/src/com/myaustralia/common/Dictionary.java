@@ -34,7 +34,7 @@ public class Dictionary {
 	}
 	
 	public static int getKeyFromValue(String dicType, String value){
-	    int res = 0;
+		int res = 0;
 		if (dicType.equals("priorityDic")) {
 			for(int key : priorityDic.keySet()) {
 				if (priorityDic.get(key).equals(value)) {
@@ -54,6 +54,6 @@ public class Dictionary {
 				}
 			}
 		}
-	    return res;
+		return res;
 	}
 }
