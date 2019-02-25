@@ -1,0 +1,13 @@
+#locations-map {
+  display: block;
+  height: 500px;
+}
+.infoBox {
+  max-width: 300px;
+  background: #fff;
+  padding: 10px;
+  border: 1px solid red;
+}
+.infoBox img {
+  border: 1px solid yellow;
+}
