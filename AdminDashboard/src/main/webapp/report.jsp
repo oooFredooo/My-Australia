@@ -75,17 +75,17 @@
               </div>
               <div class="profile_info" style="color:#fff">
                 <span>Welcome,</span>
-				<%
-                	DashboardLogin account = (DashboardLogin)session.getAttribute("account");
-				%>
-				<%= account.getUsername()%>
+                <%
+                  DashboardLogin account = (DashboardLogin)session.getAttribute("account");
+                %>
+                <%= account.getUsername()%>
               </div>
             </div>
             
 <script>
 $(document).ready(function() {
 	var authority = '<%= account.getAuthority()%>';
-	if(authority=="Admin"){
+	if (authority == "Admin") {
 		$("#sidebar-menu ul li:eq(1)").after("<li><a href=\"usermanagement.jsp\"><i class=\"fa fa-table\"></i>User Management</a></li>");
 	} else {
 		
@@ -126,7 +126,7 @@ $(document).ready(function() {
               <ul class="nav navbar-nav navbar-right">
                 <li class="">
                   <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-					<%= account.getUsername()%>
+                    <%= account.getUsername()%>
                     <span class=" fa fa-angle-down"></span>
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">
@@ -265,19 +265,19 @@ $(document).ready(function() {
 			var reportStage = $("#DTE_Field_reportStage").val();
 			var reportStatus = $("#DTE_Field_reportStatus").val();
 			
-			if(reportStage == "New"){
+			if (reportStage == "New") {
 				FeedbackReportStageId = 1;
-			}else if(reportStage == "In Progress"){
+			} else if (reportStage == "In Progress") {
 				FeedbackReportStageId = 2;			
-			}else if(reportStage == "Done"){
+			} else if (reportStage == "Done") {
 				FeedbackReportStageId = 3;
 			}
 			
-			if(reportStatus == "Frivolous"){
+			if (reportStatus == "Frivolous") {
 				FeedbackReportStatusId = 1;
-			}else if(reportStatus == "Duplicate"){
+			} else if (reportStatus == "Duplicate") {
 				FeedbackReportStatusId = 2;			
-			}else if(reportStatus == "Valid"){
+			} else if (reportStatus == "Valid") {
 				FeedbackReportStatusId = 3;
 			}
 			
