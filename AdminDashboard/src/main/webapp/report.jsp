@@ -211,7 +211,7 @@ $(document).ready(function() {
 		$('#example').DataTable( {
 			"pageLength": 5,
 			dom: "Bfrtip",
-			ajax: "http://localhost:8088/RestfulApi/reports/ReportService/report/"+authority,
+			ajax: "http://localhost:8088/RestfulApi/reports/ReportService/report/" + authority,
 			columns: [
 				{ data: "reportId" },
 				{ data: "userId" },
@@ -335,7 +335,7 @@ $(document).ready(function() {
 			$.ajax({
 				type: "DELETE",
 				async: true, 
-				url: 'http://localhost:8088/RestfulApi/reports/ReportService/report/'+IdDelete,
+				url: 'http://localhost:8088/RestfulApi/reports/ReportService/report/' + IdDelete,
 				success: function(result) {
 				}
 			});//ajax
