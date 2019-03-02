@@ -74,14 +74,13 @@
               </div>
               <div class="profile_info" style="color:#fff">
                 <span>Welcome,</span>
-				<%
-					DashboardLogin account = (DashboardLogin)session.getAttribute("account");
-				%>
-				<%= account.getUsername()%>
+                <%
+                  DashboardLogin account = (DashboardLogin)session.getAttribute("account");
+                %>
+                <%= account.getUsername()%>
               </div>
             </div>
             <!-- /menu profile quick info -->
-
             <br />
             
 <script>
@@ -128,7 +127,7 @@ $(document).ready(function() {
               <ul class="nav navbar-nav navbar-right">
                 <li class="">
                   <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-					<%= account.getUsername()%>
+                    <%= account.getUsername()%>
                     <span class=" fa fa-angle-down"></span>
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">
@@ -238,11 +237,11 @@ $(document).ready(function() {
 	}); 
 	
 	//delete
-	$(document).on("click", "div.DTE_Action_Remove button", function(){ 
+	$(document).on("click", "div.DTE_Action_Remove button", function() { 
 		$.ajax({
 			type: "DELETE",
 			async: true, 
-			url: 'http://localhost:8088/RestfulApi/reports/DashboardUserService/user/'+UserName,
+			url: 'http://localhost:8088/RestfulApi/reports/DashboardUserService/user/' + UserName,
 			success: function(result) {
 				
 			}
