@@ -67,10 +67,10 @@
               </div>
               <div class="profile_info" style="color:#fff">
                 <span>Welcome,</span>
-				<%
-					DashboardLogin account = (DashboardLogin)session.getAttribute("account");
-				%>
-				<%= account.getUsername()%>
+                <%
+                  DashboardLogin account = (DashboardLogin)session.getAttribute("account");
+                %>
+                <%= account.getUsername()%>
               </div>
             </div>
             <!-- /menu profile quick info -->
@@ -79,7 +79,7 @@
 <script>
 $(document).ready(function() {
 	var authority = '<%= account.getAuthority()%>';
-	if(authority == "Admin"){
+	if (authority == "Admin") {
 		$("#sidebar-menu ul li:eq(1)").after("<li><a href=\"usermanagement.jsp\"><i class=\"fa fa-table\"></i>User Management</a></li>");
 	} else {
 		
@@ -121,7 +121,7 @@ $(document).ready(function() {
               <ul class="nav navbar-nav navbar-right">
                 <li class="">
                   <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-					<%= account.getUsername()%>
+                    <%= account.getUsername()%>
                     <span class=" fa fa-angle-down"></span>
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">
@@ -157,7 +157,7 @@ function renderGoogleMap() {
 
 		$.ajax({
 			type: "GET",
-			url: 'http://localhost:8088/RestfulApi/reports/visualization/getmapmarkers/'+'<%= account.getAuthority()%>',
+			url: 'http://localhost:8088/RestfulApi/reports/visualization/getmapmarkers/' + '<%= account.getAuthority()%>',
 			dataType: "json",
 			success: function(data) {
 				if (data.length !== 0) {
@@ -284,7 +284,7 @@ function initMap() {
 	$.ajax({
 		async: false,
 		type: "GET",
-		url: 'http://localhost:8088/RestfulApi/reports/visualization/getmapmarkerclusters/'+'<%= account.getAuthority()%>',
+		url: 'http://localhost:8088/RestfulApi/reports/visualization/getmapmarkerclusters/' + '<%= account.getAuthority()%>',
 		dataType: "json",
 		success: function(data) {
 			locations=data;
@@ -311,7 +311,7 @@ function initMap() {
 		{imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
 }
 </script>
-<script async defer	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpB-kmj8ZpVUTJDHFlrM3il97skUyvoNc&callback=initMap&language=en-za"></script>  
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpB-kmj8ZpVUTJDHFlrM3il97skUyvoNc&callback=initMap&language=en-za"></script>  
      
         <div class="col-md-8 col-sm-8 col-xs-12">
           <div class="x_panel">
@@ -344,7 +344,7 @@ function initMap() {
             
 <script type="text/javascript">
         
-	var myChartHowManyReportsEachSuburb= echarts.init(document.getElementById('HowManyReportsEachSuburb'));
+	var myChartHowManyReportsEachSuburb = echarts.init(document.getElementById('HowManyReportsEachSuburb'));
 
 	var option = {
 		title: {
@@ -386,11 +386,11 @@ function initMap() {
 
 	myChartHowManyReportsEachSuburb.setOption(option);
 		
-	function HowManyReportsEachSuburb(){
+	function HowManyReportsEachSuburb() {
 		$.ajax({
 			type: "get",
 			async: true, 
-			url: "http://localhost:8088/RestfulApi/reports/visualization/getsuburbcount/"+'<%= account.getAuthority()%>',
+			url: "http://localhost:8088/RestfulApi/reports/visualization/getsuburbcount/" + '<%= account.getAuthority()%>',
 			dataType: "json", 
 			success: function(result) {
 				var suburb = [];
@@ -456,7 +456,7 @@ function initMap() {
             
 <script type="text/javascript">
        
-	var myChartHowManyReportsEachRoute= echarts.init(document.getElementById('HowManyReportsEachRoute'));
+	var myChartHowManyReportsEachRoute = echarts.init(document.getElementById('HowManyReportsEachRoute'));
 
 	var option = {
 		title: {
@@ -502,7 +502,7 @@ function initMap() {
 		$.ajax({
 			type: "get",
 			async: true, 
-			url: "http://localhost:8088/RestfulApi/reports/visualization/getroutecount/"+'<%= account.getAuthority()%>',
+			url: "http://localhost:8088/RestfulApi/reports/visualization/getroutecount/" + '<%= account.getAuthority()%>',
 			dataType: "json", 
 			success: function(result) {
 				var suburb = [];
