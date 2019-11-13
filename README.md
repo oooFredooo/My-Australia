@@ -6,7 +6,7 @@ An admin dashboard for report management, user management and providing statisti
 ## Technologies
 Java, Jersey (RESTful Web Services framework), Maven, JSP, Servlet, jQuery, JavaScript, ECharts, Google Maps JavaScript API, MySQL, HTML, CSS, DataTables Table plug-in for jQuery, AJAX, JSON, GitHub, Apache Tomcat, Postman
 ## Project structure
-In order to decouple, front end and back end are separate projects.  
+In order to decouple, front end and back end are separate Java maven projects.  
 <a href="https://github.com/FredLin2/My-Australia/tree/master/AdminDashboard">AdminDashboard</a> project contains front end code.  
 <a href="https://github.com/FredLin2/My-Australia/tree/master/RestfulApi">RestfulApi</a> project contains back end code. 
 
