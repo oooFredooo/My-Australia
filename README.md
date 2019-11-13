@@ -10,6 +10,6 @@ In order to decouple, front end and back end are separate Java maven projects.
 <a href="https://github.com/FredLin2/My-Australia/tree/master/AdminDashboard">AdminDashboard</a> project contains front end code.  
 <a href="https://github.com/FredLin2/My-Australia/tree/master/RestfulApi">RestfulApi</a> project contains back end code.
 ### Architecture of back end server:
-- [Installation](#installation)
+- [com.myaustralia.beans]test
     - [TER](#typo3-extension-repository)
     - [Composer](#composer)
