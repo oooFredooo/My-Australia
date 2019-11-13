@@ -12,7 +12,7 @@ In order to decouple, front end and back end are separate Java maven projects.
 ### Architecture of back end server:
 - <a href="https://github.com/FredLin2/My-Australia/tree/master/RestfulApi/src/com/myaustralia/beans">com.myaustralia.beans</a>: JavaBeans, used for back end.
 - com.myaustralia.vo: Value Objects, used for front end.
-- com.myaustralia.common: common utilities
-    - Adapter.java: include two functions, beanReportsToVOReports and voReportToBeanReport
+- com.myaustralia.common: common utilities used by all
+    - Adapter.java: include two functions (1) Convert JavaBeans reports to VO reports (2) Convert VO report to JavaBeans report
     - [Composer](#composer)
 
