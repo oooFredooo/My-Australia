@@ -15,5 +15,6 @@ In order to decouple, front end and back end are separate Java maven projects.
 - com.myaustralia.common: common utilities used by all
     - Adapter.java: include two functions  
     (1) Convert JavaBeans reports to VO reports (2) Convert VO report to JavaBeans report
-    - [Composer](#composer)
+    - DatabaseHelper.java: database connnection related functions  
+    (1) Load database credentials from database.properties file (2) Get connection (3) Close connection
 
