@@ -1,10 +1,10 @@
-package com.myaustralia.entities;
+package com.myaustralia.beans;
 
 import java.sql.Timestamp;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
-public class EntityReport {
+public class BeanReport {
 	
 	private int reportId;
 	private String userId;

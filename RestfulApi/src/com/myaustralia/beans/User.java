@@ -1,4 +1,4 @@
-package com.myaustralia.entities;
+package com.myaustralia.beans;
 
 public class User {
 	private String userName;

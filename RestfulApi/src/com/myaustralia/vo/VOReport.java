@@ -1,9 +1,9 @@
-package com.myaustralia.models;
+package com.myaustralia.vo;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
-public class ModelReport {
+public class VOReport {
 	
 	private int reportId;
 	private String userId;

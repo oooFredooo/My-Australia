@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.google.gson.Gson;
+import com.myaustralia.beans.*;
 import com.myaustralia.common.JsonHelper;
 import com.myaustralia.dao.DAO;
-import com.myaustralia.entities.*;
 
 public class MapMarkerClusterRepository {
 	

@@ -3,9 +3,9 @@ package com.myaustralia.repositories;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.myaustralia.beans.Chart;
 import com.myaustralia.common.JsonHelper;
 import com.myaustralia.dao.DAO;
-import com.myaustralia.entities.Chart;
 
 public class ChartRepository {
 	

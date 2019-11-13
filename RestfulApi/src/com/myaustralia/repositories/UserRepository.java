@@ -1,9 +1,10 @@
 package com.myaustralia.repositories;
 
 import java.util.List;
+
+import com.myaustralia.beans.*;
 import com.myaustralia.common.JsonHelper;
 import com.myaustralia.dao.DAO;
-import com.myaustralia.entities.*;
 
 public class UserRepository {
 

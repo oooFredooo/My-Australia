@@ -10,8 +10,9 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import com.myaustralia.models.ModelReport;
+
 import com.myaustralia.repositories.*;
+import com.myaustralia.vo.VOReport;
 
 @Path("/ReportService")
 public class ReportService {
@@ -37,14 +38,14 @@ public class ReportService {
 	@POST
 	@Path("report")
 	@Consumes(MediaType.APPLICATION_JSON)
-	public void createReport(ModelReport report) {
+	public void createReport(VOReport report) {
 		repo.create(report);
 	}
 		
 	@PUT
 	@Path("report")
 	@Consumes(MediaType.APPLICATION_JSON)
-	public void updateReport(ModelReport report) {
+	public void updateReport(VOReport report) {
 		repo.update(report);
 	}
 		

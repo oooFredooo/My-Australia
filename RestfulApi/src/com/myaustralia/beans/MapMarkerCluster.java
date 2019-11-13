@@ -1,4 +1,4 @@
-package com.myaustralia.entities;
+package com.myaustralia.beans;
 
 import javax.xml.bind.annotation.XmlRootElement;
 

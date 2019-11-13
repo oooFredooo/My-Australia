@@ -11,7 +11,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import com.myaustralia.entities.*;
+import com.myaustralia.beans.*;
 import com.myaustralia.repositories.*;
 
 @Path("/DashboardUserService")
