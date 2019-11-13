@@ -1,4 +1,4 @@
-package com.dashboard.entities;
+package com.dashboard.beans;
 
 public class DashboardLogin {
 	

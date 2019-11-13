@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.dashboard.entities.*;
+import com.dashboard.beans.*;
 import com.dashboard.common.DatabaseHelper;
 
 @WebServlet("/login")
