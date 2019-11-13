@@ -5,3 +5,6 @@ An admin dashboard for report management, user management and providing statisti
 <a href="https://www.youtube.com/watch?v=tWexso5tLnI&feature=youtu.be"> Demo video </a>
 ## Technologies
 Java, Jersey (RESTful Web Services framework), Maven, JSP, Servlet, jQuery, JavaScript, ECharts, Google Maps JavaScript API, MySQL, HTML, CSS, DataTables Table plug-in for jQuery, AJAX, JSON, GitHub, Apache Tomcat, Postman
+## Project structure
+<a href="https://github.com/FredLin2/My-Australia/tree/master/AdminDashboard">AdminDashboard</a> project contains front end code.
+
