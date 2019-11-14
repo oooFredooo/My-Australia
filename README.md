@@ -24,4 +24,12 @@ In order to decouple, front end and back end are separate Java maven projects.
     - ChartRepository.java: return the JSON data to be used by two charts  
     - MapMarkerClusterRepository.java: return the JSON data to be used by Google Maps map marker cluster  
     - MapMarkerRepository.java: return the JSON data to be used by Google Maps map marker       
-
+    - ReportRepository.java: CRUD of report(s)  
+    - UserRepository.java: CRUD of user(s)  
+- com.myaustralia.services: Calls the functions provided by repositories. Defines URL (Path), Verb (GET, POST, PUT, DELETE), MediaType for different RESTful web services to be consumed by front end  
+    - ImageService.java: return the image according to ReportId  
+    - ReportService.java: report related services  
+    - UserService.java: user related services  
+    - Visualization.java: charts and Google Maps related services  
+- database.properties: contains database driver class, URL, credentials  
+- params.properties: defines the max image size allowed (in Byte)  
