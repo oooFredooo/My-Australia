@@ -17,5 +17,6 @@ In order to decouple, front end and back end are separate Java maven projects.
     (1) Convert JavaBeans reports to VO reports (2) Convert VO report to JavaBeans report
     - DatabaseHelper.java: database connnection related functions  
     (1) Load database credentials from database.properties file (2) Get connection (3) Close connection
-    - Dictionary.java: (1) Initialize Integer-String HashMap for report status, report stage and report priority. (2) Functions to get key from value and get value from key.
+    - Dictionary.java: (1) Initialize Integer-String HashMap for report status, report stage and report priority. (2) Functions to get HashMap key from value and get HashMap value from key.  
+    - JsonHelper.java: return List<T> in JSON format, there are two different cases: (1) JSON with root element (format required by data table plugin) (2) JSON without root element
 
