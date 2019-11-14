@@ -18,5 +18,10 @@ In order to decouple, front end and back end are separate Java maven projects.
     - DatabaseHelper.java: database connnection related functions  
     (1) Load database credentials from database.properties file (2) Get connection (3) Close connection
     - Dictionary.java: (1) Initialize Integer-String HashMap for report status, report stage and report priority. (2) Functions to get HashMap key from value and get HashMap value from key.  
-    - JsonHelper.java: return List<T> in JSON format, there are two different cases: (1) JSON with root element (format required by data table plugin) (2) JSON without root element
+    - JsonHelper.java: return List<T> in JSON format, there are two different cases: (1) JSON with root element (format required by data table plugin) (2) JSON without root element  
+- com.myaustralia.dao: Data Access Object that supports Generics  
+- com.myaustralia.repositories: Implementation of the functions to be used in the package com.myaustralia.services  
+    - ChartRepository.java: return the JSON data to be used by two charts  
+    - MapMarkerClusterRepository.java: return the JSON data to be used by Google Maps map marker cluster  
+    - MapMarkerRepository.java: return the JSON data to be used by Google Maps map marker       
 
